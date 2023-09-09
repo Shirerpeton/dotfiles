@@ -14,7 +14,7 @@ if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
     exec startx
 fi
 
-eval $(ssh-agent) > /dev/null
+export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket
 
 bind -x '"\C-f": ~/.local/scripts/tms.sh'
 bind -x '"\C-n": ~/.local/scripts/tms.sh ~/ misc'
