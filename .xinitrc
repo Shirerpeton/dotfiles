@@ -34,4 +34,10 @@ fi
 
 autorandr -c
 
-exec i3
+#i3
+#exec i3
+
+#bspwm
+sxhkd -m 1 &
+~/.local/scripts/launch-polybar.sh
+exec bspwm

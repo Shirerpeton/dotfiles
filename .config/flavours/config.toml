@@ -38,6 +38,11 @@ subtemplate = "custom"
 start = "-- Start Flavours"
 end = "-- End Flavours"
 
+[[items]]
+file = "~/.config/polybar/config.ini"
+template = "polybar"
+hook = 'polybar-msg cmd restart'
+
 #[[items]]
 # File to inject to, supports tilde and env var expansion. required
 #file = "~/.config/alacritty/alacritty.yml"
