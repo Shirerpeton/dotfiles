@@ -43,6 +43,11 @@ file = "~/.config/polybar/config.ini"
 template = "polybar"
 hook = 'polybar-msg cmd restart'
 
+[[items]]
+file = "~/.local/themes/firefox-base16.json"
+template = "firefox-base16"
+rewrite = true
+
 #[[items]]
 # File to inject to, supports tilde and env var expansion. required
 #file = "~/.config/alacritty/alacritty.yml"
