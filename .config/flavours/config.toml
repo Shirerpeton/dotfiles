@@ -46,6 +46,7 @@ hook = 'polybar-msg cmd restart'
 [[items]]
 file = "~/.local/themes/firefox-base16.json"
 template = "firefox-base16"
+hook = "(cd ~/projects/ts/firefox-base16/; bun start -c ~/.local/themes/firefox-base16.json -a -f firefox-developer-edition)"
 rewrite = true
 
 #[[items]]
