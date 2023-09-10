@@ -18,3 +18,7 @@ export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket
 
 bind -x '"\C-f": ~/.local/scripts/tms.sh'
 bind -x '"\C-n": ~/.local/scripts/tms.sh ~/ misc'
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH=$BUN_INSTALL/bin:$PATH
