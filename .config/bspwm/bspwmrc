@@ -13,6 +13,8 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 feh --bg-fill ~/wallpapers/wallpaper1.jpg
+#hsetroot -cover ~/wallpaper/wallpaper1.jpg
+fcitx5 -d
 picom -b
 
 
