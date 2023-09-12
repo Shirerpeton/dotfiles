@@ -2,7 +2,8 @@
 
 userresources=$HOME/.Xresources
 usermodmap=$HOME/.Xmodmap
-sysresources=/etc/X11/xinit/.Xresources
+sysresources=$HOME/.Xresources
+#sysresources=/etc/X11/xinit/.Xresources
 sysmodmap=/etc/X11/xinit/.Xmodmap
 
 # merge in defaults and keymaps
@@ -32,7 +33,7 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-autorandr -c
+#autorandr -c
 
 #i3
 #exec i3

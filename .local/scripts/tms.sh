@@ -3,7 +3,7 @@
 if [[ $# -eq 1 ]] || [[ $# -eq 2 ]]; then
     dir=$1
 else
-    dir=$(find ~/ ~/projects -mindepth 1 -maxdepth 1 -type d | fzf)
+    dir=$(find ~/ ~/projects ~/projects/ts -mindepth 1 -maxdepth 1 -type d | fzf)
 fi
 
 
