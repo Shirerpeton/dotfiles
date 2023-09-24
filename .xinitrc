@@ -1,44 +1,42 @@
 #!/bin/sh
 
 userresources=$HOME/.Xresources
-usermodmap=$HOME/.Xmodmap
-sysresources=$HOME/.Xresources
+#usermodmap=$HOME/.Xmodmap
+# sysresources=$HOME/.Xresources
 #sysresources=/etc/X11/xinit/.Xresources
-sysmodmap=/etc/X11/xinit/.Xmodmap
+#sysmodmap=/etc/X11/xinit/.Xmodmap
 
 # merge in defaults and keymaps
 
-if [ -f $sysresources ]; then
-    xrdb -merge $sysresources
-fi
+#if [ -f $sysresources ]; then
+#    xrdb -merge $sysresources
+#fi
 
-if [ -f $sysmodmap ]; then
-    xmodmap $sysmodmap
-fi
+#if [ -f $sysmodmap ]; then
+#    xmodmap $sysmodmap
+#fi
 
 if [ -f "$userresources" ]; then
     xrdb -merge "$userresources"
 fi
 
-if [ -f "$usermodmap" ]; then
-    xmodmap "$usermodmap"
-fi
+#if [ -f "$usermodmap" ]; then
+#    xmodmap "$usermodmap"
+#fi
 
 # start some nice programs
 
-if [ -d /etc/X11/xinit/xinitrc.d ] ; then
- for f in /etc/X11/xinit/xinitrc.d/?*.sh ; do
-  [ -x "$f" ] && . "$f"
- done
- unset f
-fi
+#if [ -d /etc/X11/xinit/xinitrc.d ] ; then
+# for f in /etc/X11/xinit/xinitrc.d/?*.sh ; do
+#  [ -x "$f" ] && . "$f"
+# done
+# unset f
+#fi
 
-#autorandr -c
-
-#i3
+#i3 conf
 #exec i3
 
-#bspwm
-sxhkd -m 1 &
+#bspwm conf
+sxhkd -m -1 &
 ~/.local/scripts/launch-polybar.sh
 exec bspwm

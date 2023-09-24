@@ -13,12 +13,12 @@ bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
-feh --bg-fill ~/wallpapers/wallpaper1.jpg
+feh --bg-fill ~/wallpapers/wallpaper2.jpg
 #hsetroot -cover ~/wallpaper/wallpaper1.jpg
 fcitx5 -d
 picom -b
 
-
+bspc rule -a Anki desktop=^8 follow=on
 #bspc rule -a Gimp desktop='^8' state=floating follow=on
 #bspc rule -a Chromium desktop='^2'
 #bspc rule -a mplayer2 state=floating
