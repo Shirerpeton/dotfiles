@@ -145,3 +145,14 @@ XF86AudioPlay
 #toogle mouse off on on
 alt + m
     ~/.local/scripts/toggle_mouse.sh
+
+# warpd hotkeys
+
+alt + super + x
+  warpd --hint
+
+alt + super + c
+  warpd --normal
+
+alt + super + g
+  warpd --grid

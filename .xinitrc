@@ -39,4 +39,5 @@ fi
 #bspwm conf
 sxhkd -m -1 &
 ~/.local/scripts/launch-polybar.sh
+warpd
 exec bspwm

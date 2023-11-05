@@ -12,10 +12,6 @@ return require('packer').startup(function(use)
         -- or                            , branch = '0.1.x',
         requires = { {'nvim-lua/plenary.nvim'} }
     }
-    --use({
-    --    'rose-pine/neovim',
-    --    as = 'rose-pine'
-    --})
     use {
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
@@ -39,4 +35,10 @@ return require('packer').startup(function(use)
         }
     }
     use ('christoomey/vim-tmux-navigator')
+    use ('Olical/conjure')
+    use ('guns/vim-sexp')
+    use ('tpope/vim-sexp-mappings-for-regular-people')
+    use ('tpope/vim-repeat')
+    use ('tpope/vim-surround')
+
 end)

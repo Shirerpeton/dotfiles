@@ -49,6 +49,19 @@ template = "firefox-base16"
 hook = "(cd ~/projects/ts/firefox-base16/; bun start -c ~/.local/themes/firefox-base16.json -a -f firefox-developer-edition)"
 rewrite = true
 
+[[items]]
+file = "~/.config/tridactyl/themes/theme.css"
+template = "styles"
+subtemplate = "css-variables"
+start = "/* Start flavours */"
+end = "/* End flavours */"
+
+[[items]]
+file = "~/.mozilla/firefox/szrcn4wz.dev-edition-default/chrome/userContent.css"
+template = "tridactyl"
+start = "/* Start flavours */"
+end = "/* End flavours */"
+
 #[[items]]
 # File to inject to, supports tilde and env var expansion. required
 #file = "~/.config/alacritty/alacritty.yml"
