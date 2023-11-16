@@ -32,3 +32,6 @@ export VAGRANT_DEFAULT_PROVIDER=libvirt
 
 # Created by `pipx` on 2023-10-21 13:14:15
 export PATH="$PATH:/home/hylo/.local/bin"
+
+export STARDICT_DATA_DIR=$HOME/dicts/stardict
+

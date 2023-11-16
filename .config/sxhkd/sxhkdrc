@@ -151,6 +151,9 @@ alt + m
 alt + super + x
   warpd --hint
 
+alt + super + n
+  warpd --hint2
+
 alt + super + c
   warpd --normal
 
