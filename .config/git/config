@@ -1,0 +1,10 @@
+[core]
+	editor = nvim
+    pager = delta
+[user]
+	email = hyloxalusfallax@gmail.com
+	name = Shirerpeton
+[init]
+	defaultBranch = main
+[alias]
+	adog = log --all --decorate --oneline --graph
