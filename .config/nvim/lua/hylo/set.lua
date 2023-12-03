@@ -28,3 +28,4 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ','
 
 vim.opt.cursorline = true
+vim.g.netrw_liststyle = 3
