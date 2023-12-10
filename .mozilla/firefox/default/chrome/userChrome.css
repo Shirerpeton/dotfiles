@@ -1,0 +1,11 @@
+:root, body {
+    background-color: transparent !important;
+}
+
+#navigator-toolbox {
+    background-color: color-mix(in srgb, var(--lwt-accent-color), transparent 30%) !important;
+}
+
+#nav-bar {
+    background-color: color-mix(in srgb, var(--toolbar-bgcolor), transparent 30%) !important;
+}
