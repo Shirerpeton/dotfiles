@@ -1,6 +1,6 @@
 [core]
 	editor = nvim
-    pager = delta
+	pager = delta
 [user]
 	email = hyloxalusfallax@gmail.com
 	name = Shirerpeton

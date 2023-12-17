@@ -16,19 +16,13 @@ file = "~/.config/alacritty/alacritty.yml"
 template = "alacritty"
 
 [[items]]
-file = "~/.config/i3/config"
-template = "i3"
-subtemplate = "colors"
-hook = 'i3-msg reload'
-
-[[items]]
 file = "~/.config/tmux/tmux.conf"
 template = "tmux"
 hook = 'tmux source-file ~/.config/tmux/tmux.conf'
 
 [[items]]
-file = "~/.config/rofi/config.rasi"
-template = "rofi"
+file = "~/.config/wofi/style.css"
+template = "wofi"
 rewrite = true 
 
 [[items]]
@@ -39,14 +33,16 @@ start = "-- Start Flavours"
 end = "-- End Flavours"
 
 [[items]]
-file = "~/.config/polybar/config.ini"
-template = "polybar"
-hook = 'polybar-msg cmd restart'
+file = "~/.config/waybar/style.css"
+template = "waybar"
+start = "/* Start flavours */"
+end = "/* End flavours */"
+hook = 'killall waybar; waybar &'
 
 [[items]]
 file = "~/.local/themes/firefox-base16.json"
 template = "firefox-base16"
-hook = "(cd ~/projects/ts/firefox-base16/; bun start -c ~/.local/themes/firefox-base16.json -a -f firefox-developer-edition)"
+hook = "(cd ~/misc/firefox-base16/; bun start -c ~/.local/themes/firefox-base16.json -a -f firefox-developer-edition)"
 rewrite = true
 
 [[items]]
@@ -57,7 +53,7 @@ start = "/* Start flavours */"
 end = "/* End flavours */"
 
 [[items]]
-file = "~/.mozilla/firefox/szrcn4wz.dev-edition-default/chrome/userContent.css"
+file = "~/.mozilla/firefox/t1g8shmy.dev-edition-default/chrome/userContent.css"
 template = "tridactyl"
 start = "/* Start flavours */"
 end = "/* End flavours */"

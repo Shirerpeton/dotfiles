@@ -35,10 +35,15 @@ return require('packer').startup(function(use)
         }
     }
     use ('christoomey/vim-tmux-navigator')
-    use ('Olical/conjure')
+    -- use ('Olical/conjure')
     use ('guns/vim-sexp')
     use ('tpope/vim-sexp-mappings-for-regular-people')
     use ('tpope/vim-repeat')
     use ('tpope/vim-surround')
+    use ('tpope/vim-vinegar')
+
+    -- Debugger
+    --use ('mfussenegger/nvim-dap')
+    --use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
 
 end)
