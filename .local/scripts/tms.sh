@@ -3,14 +3,20 @@
 if [[ $# -eq 1 ]] || [[ $# -eq 2 ]]; then
     dir=$1
 else
-    dir=$(find ~/ ~/projects ~/projects/ts ~/projects/c -mindepth 1 -maxdepth 1 -type d | fzf)
+    dir=$(find ~/ ~/misc -mindepth 1 -maxdepth 1 -type d | fzf)
 fi
 
+name=$(echo $dir | awk -F'/' '{
+    result = ""
+    for(i = 2; i < NF; i++) {
+        result = result "/" substr($i, 1, 1)
+    }
+    result = result "/" $NF
+    print result
+}')
 
 if [[ $# -eq 2 ]]; then
     name=$2
-else
-    name=$(basename "$dir" | tr . _)
 fi
 
 if [[ -z dir ]]; then
