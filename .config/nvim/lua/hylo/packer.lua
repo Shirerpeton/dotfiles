@@ -43,7 +43,14 @@ return require('packer').startup(function(use)
     use ('tpope/vim-vinegar')
 
     -- Debugger
-    --use ('mfussenegger/nvim-dap')
-    --use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
+    use ('mfussenegger/nvim-dap')
+    use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
 
+    use ('Hoffs/omnisharp-extended-lsp.nvim')
+    use ('Glench/Vim-Jinja2-Syntax')
+    use {
+        'glacambre/firenvim',
+        run = function() vim.fn['firenvim#install'](0) end
+    }
+    use ('nvim-neotest/nvim-nio')
 end)

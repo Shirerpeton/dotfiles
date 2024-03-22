@@ -31,3 +31,8 @@ vim.opt.cursorline = true
 vim.g.netrw_liststyle = 3
 
 vim.opt.list = true
+
+vim.opt.langmap="ФЕЧСЛУПЬДНТГРОЖКЙЫВАШМЦЯЩИЗ;ABCDEFGHIJKLMNOPQRSTUVWXYZ:,фечслупьднтгрожкйывашмцящиз;abcdefghijklmnopqrstuvwxyz"
+vim.opt.keymap="russian-jcukenwin"
+vim.opt.iminsert=0
+vim.opt.imsearch=0

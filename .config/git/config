@@ -1,10 +1,28 @@
 [core]
-	editor = nvim
-	pager = delta
+    editor = nvim
+    pager = delta
 [user]
-	email = hyloxalusfallax@gmail.com
-	name = Shirerpeton
+    email = hyloxalusfallax@gmail.com
+    name = Shirerpeton
 [init]
-	defaultBranch = main
+    defaultBranch = main
+[pull]
+    rebase = true
 [alias]
-	adog = log --all --decorate --oneline --graph
+    adog = log --all --decorate --oneline --graph
+    a = add
+    ap = add -p
+    c = commit
+    cm = commit -m
+    cma = commit -am
+    s = status
+    r = rebase
+    d = diff
+    ds = diff --staged
+    d1 = diff HEAD^ HEAD
+    ch = checkout
+    pl = pull
+    ps = push
+    b = branch
+[includeIf "gitdir:~/repos/"]
+    path = ~/repos/.gitconfig
