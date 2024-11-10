@@ -3,7 +3,7 @@
 if [[ $# -eq 1 ]] || [[ $# -eq 2 ]]; then
     dir=$1
 else
-    dir=$(find ~/ ~/misc ~/projects ~/projects/angular -mindepth 1 -maxdepth 1 -type d | fzf)
+    dir=$(find ~/ ~/misc ~/projects ~/projects/zig ~/projects/angular -mindepth 1 -maxdepth 1 -type d | fzf)
 fi
 
 name=$(echo $dir | awk -F'/' '{
