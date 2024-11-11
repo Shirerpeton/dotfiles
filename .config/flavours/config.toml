@@ -12,18 +12,19 @@
 shell = "bash -c '{}'"
 
 [[items]]
-file = "~/.config/alacritty/alacritty.yml"
+file = "~/.config/alacritty/alacritty.toml"
 template = "alacritty"
 
 [[items]]
 file = "~/.config/tmux/tmux.conf"
 template = "tmux"
+subtemplate = "base16"
 hook = 'tmux source-file ~/.config/tmux/tmux.conf'
 
 [[items]]
 file = "~/.config/wofi/style.css"
 template = "wofi"
-rewrite = true 
+rewrite = true
 
 [[items]]
 file = "~/.config/nvim/lua/hylo/theme.lua"
