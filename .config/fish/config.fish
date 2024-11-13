@@ -47,7 +47,7 @@ if status is-interactive
     #ssh
     set -x SSH_AUTH_SOCK "$XDG_RUNTIME_DIR/ssh-agent.socket"
     set -x NODE_EXTRA_CA_CERTS "/etc/ca-certificates/trust-source/anchors/corp-ca.crt"
-    ssh-add ~/.ssh/gitlab 2> /dev/null 
+    ssh-add ~/.ssh/gitlab 2> /dev/null
 
     #source /usr/share/nvm/init-nvm.sh
 
