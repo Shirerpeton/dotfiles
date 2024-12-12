@@ -24,7 +24,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
     group = vim.api.nvim_create_augroup('highlight-yank', { clear = true }),
     callback = function()
         if vim.v.event.regname == '+' then
-            vim.highlight.on_yank({ higroup = "YankHighlight", timeout = 100 })
+            vim.highlight.on_yank({ higroup = "YankHighlightPlus", timeout = 100 })
         else
             vim.highlight.on_yank()
         end
