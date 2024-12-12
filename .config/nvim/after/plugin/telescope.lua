@@ -8,6 +8,11 @@ telescope.setup {
     live_grep = {
       hidden = true
     }
+  },
+  extensions = {
+    file_browser = {
+      hijack_netrw = true
+    }
   }
 }
 

@@ -8,8 +8,7 @@ return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
 
     use {
-        'nvim-telescope/telescope.nvim', tag = '0.1.2',
-        -- or                            , branch = '0.1.x',
+        'nvim-telescope/telescope.nvim',
         requires = { {'nvim-lua/plenary.nvim'} }
     }
     use {
@@ -21,7 +20,7 @@ return require('packer').startup(function(use)
     use ('tpope/vim-fugitive')
     use {
         'VonHeikemen/lsp-zero.nvim',
-        branch = 'v2.x',
+        branch = 'v3.x',
         requires = {
             -- LSP Support
             {'neovim/nvim-lspconfig'},             -- Required
@@ -35,12 +34,18 @@ return require('packer').startup(function(use)
         }
     }
     use ('christoomey/vim-tmux-navigator')
-    -- use ('Olical/conjure')
-    use ('guns/vim-sexp')
-    use ('tpope/vim-sexp-mappings-for-regular-people')
+
+    --use ('Olical/conjure')
+    --use ('guns/vim-sexp')
+    --use ('tpope/vim-sexp-mappings-for-regular-people')
+
     use ('tpope/vim-repeat')
     use ('tpope/vim-surround')
-    use ('tpope/vim-vinegar')
+    use {
+        "nvim-telescope/telescope-file-browser.nvim",
+        requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
+    }
+    use ('junegunn/vim-peekaboo')
 
     -- Debugger
     use ('mfussenegger/nvim-dap')
