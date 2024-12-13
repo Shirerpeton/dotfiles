@@ -53,6 +53,7 @@ if status is-interactive
 
     starship init fish | source
     zoxide init fish --cmd j | source
+    fzf --fish | source
 
     # bun
     set BUN_INSTALL "$HOME/.bun"
