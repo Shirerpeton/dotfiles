@@ -58,4 +58,5 @@ return require('packer').startup(function(use)
         run = function() vim.fn['firenvim#install'](0) end
     }
     use ('nvim-neotest/nvim-nio')
+    use('Wansmer/langmapper.nvim')
 end)
