@@ -2,22 +2,22 @@
 /*  by  */
 
 :root {
-  --base00: #1d2021;
-  --base01: #3c3836;
-  --base02: #504945;
-  --base03: #665c54;
-  --base04: #bdae93;
-  --base05: #d5c4a1;
-  --base06: #ebdbb2;
-  --base07: #fbf1c7;
-  --base08: #fb4934;
-  --base09: #fe8019;
-  --base0A: #fabd2f;
-  --base0B: #b8bb26;
-  --base0C: #8ec07c;
-  --base0D: #83a598;
-  --base0E: #d3869b;
-  --base0F: #d65d0e;
+  --base00: #1b182c;
+  --base01: #242136;
+  --base02: #2e2b40;
+  --base03: #585260;
+  --base04: #7e78a1;
+  --base05: #aea2c7;
+  --base06: #d5d0f1;
+  --base07: #f2ecff;
+  --base08: #ee6e8b;
+  --base09: #efa68f;
+  --base0A: #f3d88c;
+  --base0B: #96c592;
+  --base0C: #8ac2d8;
+  --base0D: #8e9af7;
+  --base0E: #c099ff;
+  --base0F: #bd7c9d;
 }
  /* End flavours */
 :root, .TridactylOwnNamespace {

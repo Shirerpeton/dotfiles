@@ -181,42 +181,43 @@ font:
 #draw_bold_text_with_bright_colors: false
 
 # Start flavours
-# Base16 Gruvbox dark, hard - alacritty color config
-# Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
-colors:
-  # Default colors
-  primary:
-    background: '0x1d2021'
-    foreground: '0xd5c4a1'
+# Base16 Atlas - alacritty color config
+# Alex Lende (https://ajlende.com)
 
-  # Colors the cursor will use if `custom_cursor_colors` is true
-  cursor:
-    text: '0x1d2021'
-    cursor: '0xd5c4a1'
+[colors]
+draw_bold_text_with_bright_colors = false
 
-  # Normal colors
-  normal:
-    black:   '0x1d2021'
-    red:     '0xfb4934'
-    green:   '0xb8bb26'
-    yellow:  '0xfabd2f'
-    blue:    '0x83a598'
-    magenta: '0xd3869b'
-    cyan:    '0x8ec07c'
-    white:   '0xd5c4a1'
+# Default colors
+[colors.primary]
+background = '0x002635'
+foreground = '0xa1a19a'
 
-  # Bright colors
-  bright:
-    black:   '0x665c54'
-    red:     '0xfe8019'
-    green:   '0x3c3836'
-    yellow:  '0x504945'
-    blue:    '0xbdae93'
-    magenta: '0xebdbb2'
-    cyan:    '0xd65d0e'
-    white:   '0xfbf1c7'
+# Colors the cursor will use if `custom_cursor_colors` is true
+[colors.cursor]
+text = '0x002635'
+cursor = '0xa1a19a'
 
-draw_bold_text_with_bright_colors: false
+# Normal colors
+[colors.normal]
+black = '0x002635'
+red = '0xff5a67'
+green = '0x7fc06e'
+yellow = '0xffcc1b'
+blue = '0x14747e'
+magenta = '0x9a70a4'
+cyan = '0x5dd7b9'
+white = '0xa1a19a'
+
+# Bright colors
+[colors.bright]
+black = '0x6c8b91'
+red = '0xf08e48'
+green = '0x00384d'
+yellow = '0x517f8d'
+blue = '0x869696'
+magenta = '0xe6e6dc'
+cyan = '0xc43060'
+white = '0xfafaf8'
 # End flavours
 
 # Colors (Tomorrow Night)

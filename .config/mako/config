@@ -1,18 +1,18 @@
-## Base16 Gruvbox dark, hard
-# Author: Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
+## Base16 Purple GPT
+# Author: GPTO1
 #
 # You can use these variables anywhere in the mako configuration file.
 
-background-color=#1d2021
-text-color=#d5c4a1
-border-color=#83a598
+background-color=#1b182c
+text-color=#aea2c7
+border-color=#8e9af7
 
 [urgency=low]
-background-color=#1d2021
-text-color=#fabd2f
-border-color=#83a598
+background-color=#1b182c
+text-color=#f3d88c
+border-color=#8e9af7
 
 [urgency=high]
-background-color=#1d2021
-text-color=#fb4934
-border-color=#83a598
+background-color=#1b182c
+text-color=#ee6e8b
+border-color=#8e9af7

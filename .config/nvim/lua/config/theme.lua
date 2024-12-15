@@ -4,24 +4,24 @@
 -- based on
 -- base16-vim (https://github.com/chriskempson/base16-vim)
 -- by Chris Kempson (https://github.com/chriskempson)
--- Gruvbox dark, hard scheme by Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
+-- Purple GPT scheme by GPTO1
 
-local gui00 = "#1d2021"
-local gui01 = "#3c3836"
-local gui02 = "#504945"
-local gui03 = "#665c54"
-local gui04 = "#bdae93"
-local gui05 = "#d5c4a1"
-local gui06 = "#ebdbb2"
-local gui07 = "#fbf1c7"
-local gui08 = "#fb4934"
-local gui09 = "#fe8019"
-local gui0A = "#fabd2f"
-local gui0B = "#b8bb26"
-local gui0C = "#8ec07c"
-local gui0D = "#83a598"
-local gui0E = "#d3869b"
-local gui0F = "#d65d0e"
+local gui00 = "#1b182c"
+local gui01 = "#242136"
+local gui02 = "#2e2b40"
+local gui03 = "#585260"
+local gui04 = "#7e78a1"
+local gui05 = "#aea2c7"
+local gui06 = "#d5d0f1"
+local gui07 = "#f2ecff"
+local gui08 = "#ee6e8b"
+local gui09 = "#efa68f"
+local gui0A = "#f3d88c"
+local gui0B = "#96c592"
+local gui0C = "#8ac2d8"
+local gui0D = "#8e9af7"
+local gui0E = "#c099ff"
+local gui0F = "#bd7c9d"
 
 local cterm00 = 0
 local cterm03 = 8
@@ -44,7 +44,7 @@ vim.cmd [[
   highlight clear
   syntax reset
 ]]
-vim.g.colors_name = "base16-gruvbox-dark-hard"
+vim.g.colors_name = "base16-purple-gpt"
 
 -- Vim editor colors                    fg bg ctermfg ctermbg attr guisp
 vim.api.nvim_set_hl(0, 'Normal', { fg = gui05, bg = nil, ctermfg = cterm05, ctermbg = cterm00 })
