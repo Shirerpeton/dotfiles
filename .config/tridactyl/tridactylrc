@@ -1,2 +1,4 @@
 set smoothscroll true
-colors theme 
+colors theme
+
+bind go tab #
