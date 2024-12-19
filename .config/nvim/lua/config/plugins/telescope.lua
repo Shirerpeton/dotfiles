@@ -4,7 +4,7 @@ return {
         tag = '0.1.8',
         dependencies = {
             'nvim-lua/plenary.nvim',
-            { 'nvim-telescope/telescope-fzf-native.nvim',  build = 'make' },
+            { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
             -- { 'nvim-telescope/telescope-file-browser.nvim' }
         },
         config = function()
@@ -24,7 +24,7 @@ return {
             vim.keymap.set('n', '<space>fh', builtin.help_tags)
             vim.keymap.set('n', '<space>ff', builtin.find_files)
             vim.keymap.set('n', '<space>fg', builtin.live_grep)
-            --vim.keymap.set('n', '<space>fj', ':Telescope file_browser<CR>')
+            -- vim.keymap.set('n', '<space>fj', ':Telescope file_browser<CR>')
             vim.keymap.set('n', '<space>fr', builtin.lsp_references, {})
             vim.keymap.set('n', 'gd', builtin.lsp_definitions, {})
             vim.keymap.set('n', 'gi', builtin.lsp_implementations, {})
