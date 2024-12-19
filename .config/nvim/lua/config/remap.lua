@@ -14,3 +14,5 @@ vim.keymap.set('n', '<C-b>', '<C-a>')
 
 vim.keymap.set('n', '<M-j>', '<cmd>cnext<CR>')
 vim.keymap.set('n', '<M-k>', '<cmd>cprev<CR>')
+
+vim.keymap.set('n', 'q:', '<Nop>')
