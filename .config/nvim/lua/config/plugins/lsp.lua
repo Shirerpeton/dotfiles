@@ -2,8 +2,9 @@ return {
     {
         'neovim/nvim-lspconfig',
         config = function()
-            require('lspconfig').lua_ls.setup({})
-            require 'lspconfig'.omnisharp.setup {
+            local lspconfig = require('lspconfig')
+            lspconfig.lua_ls.setup({})
+            lspconfig.omnisharp.setup {
                 cmd = { '/usr/bin/omnisharp' },
                 settings = {
                     FormattingOptions = {
@@ -45,18 +46,21 @@ return {
                     },
                 },
             }
-            require('lspconfig').ts_ls.setup({
+            lspconfig.ts_ls.setup({
                 init_options = {
                     plugins = {
                         {
                             name = '@vue/typescript-plugin',
-                            location = '/usr/lib/node_modules/@vue/language-server',
+                            location = '/home/hylo/.local/share/pnpm/global/5/node_modules/@vue/typescript-plugin',
                             languages = { 'vue' },
                         },
                     },
                 },
                 filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue' },
             })
+            lspconfig.volar.setup({})
+            lspconfig.eslint.setup({})
+            lspconfig.tailwindcss.setup({})
         end,
     }
 }
