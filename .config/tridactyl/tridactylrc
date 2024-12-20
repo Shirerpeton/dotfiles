@@ -1,4 +1,5 @@
 set smoothscroll true
 colors theme
 
-bind go tab #
+set editorcmd alacritty -T tridactyl -e tmux new-session -A -s tridactyl nvim %f '+normal!%lGzv%c|'
+

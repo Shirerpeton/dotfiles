@@ -22,12 +22,19 @@ subtemplate = "base16"
 hook = 'tmux source-file ~/.config/tmux/tmux.conf'
 
 [[items]]
+file = "~/.config/tmux-powerline/themes/default.sh"
+template = "tmux-powerline"
+subtemplate = "base16"
+hook = 'tmux source-file ~/.config/tmux/tmux.conf'
+rewrite = true
+
+[[items]]
 file = "~/.config/wofi/style.css"
 template = "wofi"
 rewrite = true
 
 [[items]]
-file = "~/.config/nvim/lua/hylo/theme.lua"
+file = "~/.config/nvim/lua/config/theme.lua"
 template = "nvim"
 subtemplate = "custom"
 start = "-- Start Flavours"
@@ -54,7 +61,7 @@ start = "/* Start flavours */"
 end = "/* End flavours */"
 
 [[items]]
-file = "~/.mozilla/firefox/t1g8shmy.dev-edition-default/chrome/userContent.css"
+file = "~/.mozilla/firefox/dybbjtda.dev-edition-default/chrome/userContent.css"
 template = "tridactyl"
 start = "/* Start flavours */"
 end = "/* End flavours */"
@@ -63,6 +70,12 @@ end = "/* End flavours */"
 file = "~/.config/mako/config"
 template = "mako"
 hook = 'killall mako; mako &'
+rewrite = true
+
+[[items]]
+file = "~/.config/fish/conf.d/fzf.fish"
+template = "fzf"
+subtemplate = "base16-fish"
 rewrite = true
 
 #[[items]]
