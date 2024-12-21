@@ -1,0 +1,61 @@
+# Start flavours
+# Base16 Purple GPT - alacritty color config
+# GPTO1
+
+[colors]
+draw_bold_text_with_bright_colors = false
+
+# Default colors
+[colors.primary]
+background = '0x201b3a'
+foreground = '0xbfb3e2'
+
+# Colors the cursor will use if `custom_cursor_colors` is true
+[colors.cursor]
+text = '0x201b3a'
+cursor = '0xbfb3e2'
+
+# Normal colors
+[colors.normal]
+black = '0x201b3a'
+red = '0xee6e8b'
+green = '0x96c592'
+yellow = '0xf3d88c'
+blue = '0x8e9af7'
+magenta = '0xc099ff'
+cyan = '0x8ac2d8'
+white = '0xbfb3e2'
+
+# Bright colors
+[colors.bright]
+black = '0x766ebd'
+red = '0xefa68f'
+green = '0x2b2548'
+yellow = '0x3a3360'
+blue = '0xa3a3d6'
+magenta = '0xd9d3f8'
+cyan = '0xbd7c9d'
+white = '0xf9f6ff'
+# End flavours
+
+[font]
+size = 16.0
+
+[font.bold]
+family = "FiraCodeNerdFontMono"
+style = "Bold"
+
+[font.bold_italic]
+family = "FiraCodeNerdFontMono"
+style = "Bold Italic"
+
+[font.italic]
+family = "FiraCodeNerdFontMono"
+style = "Italic"
+
+[font.normal]
+family = "FiraCodeNerdFontMono"
+style = "Medium"
+
+[window]
+opacity = 0.92

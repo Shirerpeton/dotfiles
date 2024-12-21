@@ -61,7 +61,7 @@ start = "/* Start flavours */"
 end = "/* End flavours */"
 
 [[items]]
-file = "~/.mozilla/firefox/dybbjtda.dev-edition-default/chrome/userContent.css"
+file = "~/.mozilla/firefox/t1g8shmy.dev-edition-default/chrome/userContent.css"
 template = "tridactyl"
 start = "/* Start flavours */"
 end = "/* End flavours */"

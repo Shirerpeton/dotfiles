@@ -3,26 +3,26 @@
  * Purple GPT scheme by GPTO1 */
 
 window {
-	background-color: #1b182c;
-	color: #aea2c7;
+	background-color: #201b3a;
+	color: #bfb3e2;
 }
 
 #entry:nth-child(odd) {
-	background-color: #1b182c;
+	background-color: #201b3a;
 }
 
 #entry:nth-child(even) {
-	background-color: #242136;
+	background-color: #2b2548;
 }
 
 #entry:selected {
-	background-color: #2e2b40;
+	background-color: #3a3360;
 }
 
 #input {
-	background-color: #242136;
-	color: #7e78a1;
-	border-color: #2e2b40; 
+	background-color: #2b2548;
+	color: #a3a3d6;
+	border-color: #3a3360; 
 }
 
 #input:focus {

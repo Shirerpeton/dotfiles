@@ -3,16 +3,16 @@
 #
 # You can use these variables anywhere in the mako configuration file.
 
-background-color=#1b182c
-text-color=#aea2c7
+background-color=#201b3a
+text-color=#bfb3e2
 border-color=#8e9af7
 
 [urgency=low]
-background-color=#1b182c
+background-color=#201b3a
 text-color=#f3d88c
 border-color=#8e9af7
 
 [urgency=high]
-background-color=#1b182c
+background-color=#201b3a
 text-color=#ee6e8b
 border-color=#8e9af7
