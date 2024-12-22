@@ -6,14 +6,14 @@
 -- by Chris Kempson (https://github.com/chriskempson)
 -- Purple GPT scheme by GPTO1
 
-local gui00 = "#1b182c"
-local gui01 = "#242136"
-local gui02 = "#2e2b40"
-local gui03 = "#585260"
-local gui04 = "#7e78a1"
-local gui05 = "#aea2c7"
-local gui06 = "#d5d0f1"
-local gui07 = "#f2ecff"
+local gui00 = "#201b3a"
+local gui01 = "#2b2548"
+local gui02 = "#3a3360"
+local gui03 = "#766ebd"
+local gui04 = "#a3a3d6"
+local gui05 = "#bfb3e2"
+local gui06 = "#d9d3f8"
+local gui07 = "#f9f6ff"
 local gui08 = "#ee6e8b"
 local gui09 = "#efa68f"
 local gui0A = "#f3d88c"
@@ -44,7 +44,7 @@ vim.cmd [[
   highlight clear
   syntax reset
 ]]
-vim.g.colors_name = "base16-purple-gpt"
+vim.g.colors_name = "base16-purple-gpt-v2"
 
 -- Vim editor colors                    fg bg ctermfg ctermbg attr guisp
 vim.api.nvim_set_hl(0, 'Normal', { fg = gui05, bg = nil, ctermfg = cterm05, ctermbg = cterm00 })
