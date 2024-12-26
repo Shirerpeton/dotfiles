@@ -78,6 +78,12 @@ template = "fzf"
 subtemplate = "base16-fish"
 rewrite = true
 
+[[items]]
+file = "~/.config/ghostty/themes/default"
+template = "ghostty"
+subtemplate = "custom"
+rewrite = true
+
 #[[items]]
 # File to inject to, supports tilde and env var expansion. required
 #file = "~/.config/alacritty/alacritty.yml"
