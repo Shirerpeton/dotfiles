@@ -1,34 +1,33 @@
 /* Start flavours */
 /*
 *
-* Base16 Gruvbox dark, hard
-* Author: Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
+* Base16 Purple GPT
+* Author: GPTO1
 *
 */
 
-@define-color base00 #1d2021;
-@define-color base01 #3c3836;
-@define-color base02 #504945;
-@define-color base03 #665c54;
-@define-color base04 #bdae93;
-@define-color base05 #d5c4a1;
-@define-color base06 #ebdbb2;
-@define-color base07 #fbf1c7;
-@define-color base08 #fb4934;
-@define-color base09 #fe8019;
-@define-color base0A #fabd2f;
-@define-color base0B #b8bb26;
-@define-color base0C #8ec07c;
-@define-color base0D #83a598;
-@define-color base0E #d3869b;
-@define-color base0F #d65d0e;
+@define-color base00 #201b3a;
+@define-color base01 #2b2548;
+@define-color base02 #3a3360;
+@define-color base03 #766ebd;
+@define-color base04 #a3a3d6;
+@define-color base05 #bfb3e2;
+@define-color base06 #d9d3f8;
+@define-color base07 #f9f6ff;
+@define-color base08 #ee6e8b;
+@define-color base09 #efa68f;
+@define-color base0A #f3d88c;
+@define-color base0B #96c592;
+@define-color base0C #8ac2d8;
+@define-color base0D #8e9af7;
+@define-color base0E #c099ff;
+@define-color base0F #bd7c9d;
 /* End flavours */
 
 * {
     border: none;
     border-radius: 0px;
-    /* `otf-font-awesome` is required to be installed for icons */
-    font-family: FiraCodeNerdFontMono, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-family: FiraCodeNerdFontMono, sans-serif;
     font-size: 18px;
     font-weight: bold;
     min-height: 0;
@@ -41,27 +40,30 @@ window#waybar {
 
 tooltip {
     background: @base01;
-    border-radius: 10px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: @base00;
+    border: 2px solid @base03;
+    border-radius: 0.5rem;
 }
 
 #workspaces button {
+    border: none;
     padding: 5px 10px;
-    border-right: 1px solid @base00;
+    background-color: @base00;
     color: @base03;
+    border-radius: 10px;
 }
 
-#workspaces button:last-child {
-  border: none;
+#workspaces > button:first-child {
+    margin-left: 0.5rem;
+}
+#workspaces > button:last-child {
+    margin-right: 0.5rem;
 }
 
-#workspaces button.active {
+#workspaces > button.active {
     color: @base05;
 }
 
-#workspaces button.focused {
+#workspaces > button.focused {
     color: @base01;
     background: @base09;
     border-radius: 10px;
@@ -118,35 +120,34 @@ tooltip {
 }
 
 #clock {
-    color: #fab387;
+    color: @base09;
     border-radius: 10px 0px 0px 10px;
     margin-left: 5px;
     border-right: 0px;
 }
 
 #network {
-    color: #f9e2af;
+    color: @base0A;
     border-left: 0px;
     border-right: 0px;
 }
 
 #pulseaudio {
-    color: #89b4fa;
+    color: @base0C;
     border-left: 0px;
     border-right: 0px;
     border-radius: 10px 0px 0px 10px;
 }
 
 #pulseaudio.microphone {
-    color: #cba6f7;
+    color: @base0C;
     border-radius: 0px 10px 10px 0px;
     border-left: 0px;
     border-right: 0px;
     margin-right: 5px;
 }
 
-#battery {
-    color: #a6e3a1;
+#language {
     border-radius: 0 10px 10px 0;
     margin-right: 10px;
     border-left: 0px;

@@ -84,44 +84,16 @@ template = "ghostty"
 subtemplate = "custom"
 rewrite = true
 
-#[[items]]
-# File to inject to, supports tilde and env var expansion. required
-#file = "~/.config/alacritty/alacritty.yml"
-# Template to use. required
-#template = "alacritty"
-# # Subtemplate to use
-# subtemplate = "default"
-# # If not rewriting, on which line (usually a comment) to start replacing
-# start = "# Start flavours"
-# # If not rewriting, on which line (usually a comment) to stop replacing
-# end = "# End flavours"
-# # Should we rewrite the entire file, instead of using the above delimiters?
-# rewrite = false
-# # Command to execute after injecting (goes through shell)
-# hook = ""
-# # Whether this hook should be executed when flavours is ran with lightweight flag
-# light = true
+[[items]]
+file = "~/.themes/FlatColor/gtk-3.0/gtk.css"
+template = "gtk-flatcolor"
+subtemplate = "gtk-3"
+start = "/* Start flavours */"
+end = "/* End flavours */"
 
-
-# Example file. For sway, waybar and (beautiful)discord. Runs hooks through bash:
-
-# shell = "bash -c '{}'"
-#
-# [[items]]
-# file = "~/.config/sway/config"
-# template = "sway"
-# subtemplate = "colors"
-# hook = "swaymsg reload"
-# light = false
-#
-# [[items]]
-# file = "~/.config/waybar/colors.css"
-# template = "waybar"
-# rewrite = true
-# 
-# [[items]]
-# file = "~/.config/beautifuldiscord/style.css"
-# template = "styles"
-# subtemplate = "css-variables"
-# start= "/* Start flavours */"
-# end = "/* End flavours */"
+[[items]]
+file = "~/.themes/FlatColor/gtk-2.0/gtkrc"
+template = "gtk-flatcolor"
+subtemplate = "gtk-2"
+start = "# Start flavours"
+end = "# End flavours"
