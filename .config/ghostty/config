@@ -1,3 +1,9 @@
 theme = default
 font-family = FiraCodeNerdFontMono
-background-opacity = 0.92
+background-opacity = 0.90
+window-padding-x = 10
+window-padding-y = 10
+window-padding-balance = true
+window-decoration = none
+font-size = 16
+gtk-adwaita = false

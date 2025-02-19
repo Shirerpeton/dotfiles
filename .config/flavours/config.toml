@@ -92,6 +92,13 @@ start = "/* Start flavours */"
 end = "/* End flavours */"
 
 [[items]]
+file = "~/.themes/FlatColor/gtk-3.20/gtk.css"
+template = "gtk-flatcolor"
+subtemplate = "gtk-3"
+start = "/* Start flavours */"
+end = "/* End flavours */"
+
+[[items]]
 file = "~/.themes/FlatColor/gtk-2.0/gtkrc"
 template = "gtk-flatcolor"
 subtemplate = "gtk-2"
