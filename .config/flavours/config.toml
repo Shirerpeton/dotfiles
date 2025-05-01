@@ -29,9 +29,10 @@ hook = 'tmux source-file ~/.config/tmux/tmux.conf'
 rewrite = true
 
 [[items]]
-file = "~/.config/wofi/style.css"
-template = "wofi"
-rewrite = true
+file = "~/.config/rofi/theme.rasi"
+template = "rofi"
+start = "//Start Flavours"
+end = "//End Flavours"
 
 [[items]]
 file = "~/.config/nvim/lua/config/theme.lua"
@@ -50,7 +51,7 @@ hook = 'killall waybar; waybar &'
 [[items]]
 file = "~/.local/themes/firefox-base16.json"
 template = "firefox-base16"
-hook = "(cd ~/misc/firefox-base16/; bun start -c ~/.local/themes/firefox-base16.json -a -f firefox-developer-edition)"
+hook = "(cd ~/misc/firefox-base16/; bun start -c ~/.local/themes/firefox-base16.json -a -f librewolf)"
 rewrite = true
 
 [[items]]
@@ -62,6 +63,12 @@ end = "/* End flavours */"
 
 [[items]]
 file = "~/.mozilla/firefox/t1g8shmy.dev-edition-default/chrome/userContent.css"
+template = "tridactyl"
+start = "/* Start flavours */"
+end = "/* End flavours */"
+
+[[items]]
+file = "~/.librewolf/vzs6o8lk.default-default/chrome/userContent.css"
 template = "tridactyl"
 start = "/* Start flavours */"
 end = "/* End flavours */"
